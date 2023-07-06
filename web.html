@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/proj.css"/>
+    <title>WELCOME TO MY WORLD</title>
+    <style>
+.d{
+    margin-top: 170px
+    /carousel image/
+    
+}
+.nav-item:hover{
+    background: white;
+}
+.h1 {
+    font-size: 50px;
+    background: linear-gradient(rgb(0, 221, 255), rgb(175, 26, 175), rgb(49, 0, 128));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.h4 {
+    line-height: 80px;
+    font-size: 50px;
+    font-weight: 700;
+}
+.i {
+    border: 5px solid skyblue;
+}
+.rahul{
+position:relative;
+width:50%;
+}
+i.{
+display:block;
+width:100%;
+height:auto;
+}
+ a{
+text-decoration:none;
+}
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+    </style>
+</head>
+<body style="overflow-x:hidden">
+    <div class="container-fluid">
+    <div class="container-fluid">
+        <!--HEADER -->
+        <header>
+        <div class="row">
+        <div class="col-5">
+            <span class="h6">Email:-</span>rahulsunny077@gmail.com
+        </div>
+        <div class="col-7 d-flex justify-content-between">
+        <i class="bi bi-facebook text-info"><a href="https://www.facebook.com/" >&nbsp;&nbsp;FACEBOOK</a></i>
+        <i class="bi bi-linkedin text-primary"><a href="https://in.linkedin.com/">&nbsp;&nbsp;LINKEDIN</a></i>
+        <i class="bi bi-github text-success"><a href="https://github.com/">&nbsp;&nbsp;GITHUB</a></i>
+        <i class="bi bi-instagram text-danger"><a href="https://www.instagram.com/">&nbsp;&nbsp;INSTAGRAM</a></i>
+        </div>
+        </div>
+        </header>
+        <!-- NAVBAR -->
+        <nav>
+            <div class="navbar navbar-expand bg-light">
+                <a class="navbrand col-3" href=""><img src="images/im8.jpg" class="img-fluid" width="70px" height="70px"/></a>
+                <button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="menu">
+                    <ul class="navbar-nav d-flex justify-content-between col-9 mx-auto">
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-dark">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-dark">ABOUT</a>
+                        </li>
+
+						<li class="nav-item"><a  href="" class="nav-link text-dark">SERVICES</a>
+</li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">RIGISTER</a>
+							
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-primary" id="exampleModalLabel">Student Registraion Form</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">	Name</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Phn.No</label>
+            <input type="text" class="form-control" id="message-text">
+          </div>
+		            <div class="mb-3">
+
+                    <label class="control-label col-sm-2 text-dark" for="email">Email :</label>
+                    
+                        <input type="email" class="form-control" name="email" id="email">
+            </div>
+			<div class="mb-3">
+			 <label class="control-label col-sm-2 text-dark" for="city">Your City:</label>
+                        <select class="form-control" id="city" name="city">
+                            <option>Select Your City</option>
+                            <option value="Vijayawada">Vijayawada</option>
+                            <option value="Rajamahendravaram">Rajamahendravaram</option>
+                            <option value="Kakinada">Kakinada</option>
+                            <option value="Vishakapatnam">Vishakapatnam</option>
+                            <option value="Vizinagaram">Vizinagaram</option>
+                            <option value="Srikakulam">Srikakulam</option>
+                            <option value="Guntur">Guntur</option>
+                            <option value="Ongole">Ongole</option>
+                            <option value="Nellore">Nellore</option>
+                            <option value="Thirupathi">Thirupathi</option>
+                            <option value="Chittor">Chittor</option>
+
+                        </select>
+                   </div>
+				   <div class="mb-3">
+				    <label class="control-label col-sm-2 text-dark">Gender :</label>
+                        <label class="radio-inline">
+                            <input type="radio" name="gen" id="male" value="Male">Male
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="gen" id="female" value="Female">Female
+                        </label>
+                   </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success">SUBMIT</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </li>
+  
+  <li class="nav-item">
+  
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-dark">CONTACTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="webcare.html" class="nav-link text-dark">CARRIER</a>
+                        </li>
+                        <button class="btn btn-info">ADMIN</button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- CAROUSEL -->
+        <div class="container-fluid bg-dark" style="background:url('images/im9.jpg');background-size:100% 100%;height:600px;width:100%;">
+        <div class="carousel slide" data-bs-ride="carousel" id="slide">
+            <div class="carousel-inner">
+                <div class="carousel-indicators">
+                    <button class="active" data-bs-slide-to="0" data-bs-target="#slide">
+                    </button>
+                    <button class="" data-bs-slide-to="1" data-bs-target="#slide">
+                    </button>
+                    <button class="" data-bs-slide-to="2" data-bs-target="#slide">
+                    </button>
+                    <button class="" data-bs-slide-to="3" data-bs-target="#slide">
+                    </button>
+                </div>
+                <div class="carousel-item active">
+                    <div class="carousel-caption"><b>JAVA SCRIPT</b></div>
+                    <img src="images/im77.jpg" alt="" class="rounded-circle d-flex mx-auto align-content-center d" width="400px" height="400px">
+                </div>
+                <div class="carousel-item">
+                <div class="carousel-caption"><b>BOOTSTRAP</b></div>
+                    <img src="images/im4.jpg" alt="" class="rounded-circle d-flex mx-auto align-content-center d" width="400px" height="400px">
+                </div>
+                <div class="carousel-item">
+                <div class="carousel-caption"><b>PHP</b></div>
+                    <img src="images/im66.jpg" alt="" class="rounded-circle d-flex mx-auto align-content-center d" width="400px" height="400px">
+                </div>
+                                                               
+															   <div class="carousel-item">
+                <div class="carousel-caption"><b>SQL</b></div>
+                    <img src="images/im3.jpg" alt="" class="rounded-circle d-flex mx-auto align-content-center d" width="400px" height="400px">
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- ABOUT -->
+        <div class="row">
+            <center class="h2">ABOUT ME</center>
+            <div class="col-6 h4">
+                Hi,<br>
+                My Name is,<br>
+                <span class="h1 mt-2">M.RAHUL SUNNY.</span><br>
+                <div class="h3 mt-2">“I think it's possible for ordinary<br> people to choose to be extraordinary.” ...
+</div>
+                <button class="btn btn-info col-3 p-2">RESUME</button>
+            </div>
+            <div class="col-6 mt-5 text-center rahul">
+                <img class="img-fluid i rounded-circle w-75 h-75" src="images/RS.jpeg">
+				<div class="overlay">
+				</div>
+				</div>
+            </div>
+       </div>
+    </div>
+    </div>
+	<div class="row">
+<div class="col-12">
+<h2 class="text-center text-warning"><i><b>Our Team Members</b></i></h2>
+</div>
+</div>
+<div class="row">
+<div class="col-4">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+<img src="images/ala.jpg" class="im" width="300px" 
+height="200px">
+</div>
+    <div class="flip-box-back">
+      <h2>developer</h2>
+      <p>Talented person</p>
+    </div>
+  </div>
+</div>
+<h3><b class="text-info">AlaBakshu</b></h3>
+<h5><i>Full Stack Developer</i></h5>
+</div>
+<div class="col-4">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+<img src="images/navi.jpg" class="im1" width="300px" height="200px">
+</div>
+<div class="flip-box-back">
+      <h2>Naveen</h2>
+      <p>1.good comunication skills<br>2.hard work</p>
+    </div>
+  </div>
+<h3><b class="text-info">R.Naveen</b></h3>
+<h5><i>Front End Developer</i></h5>
+</div>
+</div>
+<div class="col-4">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+<img 
+src="images/kkr.jpg" class="im2" width="300px" height="200px">
+<h3><b class="text-info">Koteswarao</b></h3><h5><i>Back End Developer</i></h5>
+</div>
+    <div class="flip-box-back">
+      <h2>KOKOKOLA KOTI</h2>
+      <p>Good Talented in sleeping</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="row bg-light mt-5">
+<div class="col-sm-4">
+<h3><b>RahulSunny</b></h3>
+<h5><i>Web Developer</i></h5>
+<br>
+<p class="text-dark">We offer the services you need to succeed online. <br>
+Get in touch today and <br>let us help you transform your online presence.</p>
+</div>
+<div class="col-sm-4">
+<h3>Use Full Links</h3>
+<br>
+<h6 class="mt-4">FAQ</h6>
+<br>
+<h6>Praivacy & Policy</h6>
+<br>
+<h6>Tearm & Condition</h6>
+<br>
+<h6>Support</h6>
+<br>
+</div>
+<div class="col-sm-4">
+<h3>Contact Us</h3>
+<br>
+<br>
+<h6><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp; Nuzvid,AndhraPradesh,Pin no.52111<br></h6>
+<br>
+<h6><i class="bi bi-telephone-fill"></i>&nbsp;&nbsp; 9059667477</h6>
+<br>
+<h6><i class="bi bi-envelope-fill"></i>&nbsp;&nbsp; rahulsunny077@gmail.com</h6>
+<br>
+<i class="bi bi-twitter "></i>
+<i class="bi bi-whatsapp mx-3"></i>
+</div>
+</div>
+</body>
+</html>
